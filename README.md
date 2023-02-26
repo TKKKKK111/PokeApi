@@ -1,2 +1,3 @@
 # PokeApi
- Consumo de PokeApi con React y MaterialUI
+ Consumo de PokeApi con React y Boostrap
+ 
