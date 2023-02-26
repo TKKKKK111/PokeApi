@@ -1,2 +1,4 @@
 html , body { background: rgb(255,203,225);
   background: radial-gradient(circle, rgba(255,203,225,1) 0%, rgba(148,228,233,1) 100%);}
+
+.card { height: 200px; width: 300px;}
