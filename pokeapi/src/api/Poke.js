@@ -6,6 +6,9 @@ import axios from 'axios';
             stat(peticion);
             
        }
-
+       export const getInfo = async (stat)=>{
+          const info = await axios.get(`https://pokeapi.co/api/v2/pokemon/${stat}'`).then((resp)=>resp.data);
+          return info;
+       }
 
 

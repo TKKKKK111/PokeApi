@@ -1,4 +1,36 @@
 html , body { background: rgb(255,203,225);
   background: radial-gradient(circle, rgba(255,203,225,1) 0%, rgba(148,228,233,1) 100%);}
 
+  @font-face {
+    font-family: 'Pocket';
+    src: url('./PocketMonk.otf');
+}
+
+
+  @font-face {
+    font-family: 'PokemonGB';
+    src: url('./PokemonGB.ttf');
+}
+    
+
+
+
 .card { height: 200px; width: 300px;}
+
+.card img{ 
+  height: 130px;
+  width: 110px;
+  object-fit: cover;
+}
+
+#card{
+  font-family: "PokemonGB";
+  font-size: small;
+
+}
+#titulo-bar {
+  font-family: "Pocket";
+  font-size: 30px;
+  color: gold;
+  -webkit-text-stroke: 0.5px black;
+}
