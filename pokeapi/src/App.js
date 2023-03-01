@@ -1,8 +1,9 @@
 
-import { useState} from 'react';
+
 import './App.css';
-import HomePage from './components/HomePages';
+
 import NavBar from './components/NavBar';
+import HomePage from './pages/HomePages';
 
 
 
@@ -14,7 +15,7 @@ function App() {
   return (
    <>
   <NavBar />
-   <HomePage />
+    <HomePage/>
    
    
    </>

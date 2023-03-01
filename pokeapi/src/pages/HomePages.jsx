@@ -1,12 +1,12 @@
 import React,{useEffect, useState} from 'react'
-import {  getInfo, getPokemons } from '../api/Poke';
+import { getPokemons } from '../api/Poke';
 
 
 const HomePage = () => {
 
     const [pokemons, setPoke] = useState([]);
     const [datos, setDatos] = useState("");
-    const [info, setInfo] = useState([]);
+  
    
 
           
@@ -14,17 +14,17 @@ const HomePage = () => {
 
     useEffect(() => {
         getPokemons(setPoke);
-        getInfo(setInfo);
-    
+     
     }, []);
-    console.log(info);
+    
 
     return (  
         <>
+        <br/>
             <div className='container'>
             <>
               <form role={'search'} className='d-flex'>
-                <input className="form-control me-2" focus aria-label='Search' type="search" value={datos} onChange={(e)=>setDatos(e.target.value.toLocaleLowerCase())}/>
+                <input className="form-control me-2"  aria-label='Search' placeholder="Search a Pokemon"type="search" value={datos} onChange={(e)=>setDatos(e.target.value.toLocaleLowerCase())}/>
                 </form>
             </>
                 <div className="row">
@@ -40,7 +40,7 @@ const HomePage = () => {
                                     <div className="card-title">
                                         
                                         {items.name}
-                                        {getInfo(items.name)}
+                                       
                                     
                                     
                                     </div>
