@@ -1,4 +1,4 @@
-html , body { background: rgb(255,203,225);
+#root,html,body { background: rgb(196, 163, 177);
   background: radial-gradient(circle, rgba(255,203,225,1) 0%, rgba(148,228,233,1) 100%);}
 
   @font-face {

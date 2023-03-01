@@ -21,7 +21,7 @@ const HomePage = () => {
     return (  
         <>
         <br/>
-            <div className='container'>
+            <div className='container '>
             <>
               <form role={'search'} className='d-flex'>
                 <input className="form-control me-2"  aria-label='Search' placeholder="Search a Pokemon"type="search" value={datos} onChange={(e)=>setDatos(e.target.value.toLocaleLowerCase())}/>
