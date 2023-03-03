@@ -1,11 +1,12 @@
 import React,{useEffect, useState} from 'react'
-import { getPokemons } from '../api/Poke';
+import { getInfo, getPokemons } from '../api/Poke';
 
 
 const HomePage = () => {
 
     const [pokemons, setPoke] = useState([]);
     const [datos, setDatos] = useState("");
+    const [inf, setInf]=useState([]);
   
    
 
@@ -13,6 +14,7 @@ const HomePage = () => {
     
 
     useEffect(() => {
+        getInfo(setInf,setDatos);
         getPokemons(setPoke);
      
     }, []);
@@ -41,7 +43,7 @@ const HomePage = () => {
                                         
                                         {items.name}
                                        
-                                    
+                                    {/* VER SI CONVIENE PONER LAS HABILIDADE ACÁ o en el otro page. */}
                                     
                                     </div>
                                 </div>
