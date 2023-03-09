@@ -12,7 +12,7 @@ import { useState } from 'react';
             stat(peticion);
             
        }
-       export const getInfo  = async (stat , inf)=>{
+       export const getInfo  = async (stat , inf,name)=>{
         
 
         
@@ -20,7 +20,7 @@ import { useState } from 'react';
 
 
 
-          const info = await axios.get(`https://pokeapi.co/api/v2/move-ailment/1`).then((resp)=>resp.data.moves);
+          const info = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`).then((resp)=>resp.data);
           const peticion = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=15').then((resp)=> resp.data.results);
             
           
