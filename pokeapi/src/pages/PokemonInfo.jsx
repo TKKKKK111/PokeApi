@@ -19,7 +19,7 @@ const PokemonInfo = () => {
         {data.map((item,index)=><li key={index}> 
                     {item.name}
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${item.url.split('/')[6]}.png`} alt='Imagen no encontrada' />
-                    {info.map((item)=><div key={item.id} > {item.name}</div>)}
+                    {info.map((item)=><div key={index} > {item.name}</div>)}
    
    
                 </li>)}
